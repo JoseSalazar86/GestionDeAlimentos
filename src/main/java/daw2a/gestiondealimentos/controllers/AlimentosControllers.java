@@ -38,6 +38,7 @@ public class AlimentosControllers {
         return ResponseEntity.ok(alertas);
     }
     
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteAlimentoById(@PathVariable int id) {
         alimentosServices.deleteById(id);

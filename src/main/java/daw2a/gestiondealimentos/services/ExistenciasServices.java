@@ -11,6 +11,11 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import daw2a.gestiondealimentos.entities.Existencias;
+import daw2a.gestiondealimentos.repository.ExistenciasRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Optional;
 
@@ -82,5 +87,18 @@ public class ExistenciasServices {
         }
 
         existenciasRepository.save(existenciaDestino);
+    }
+
+    public Existencias save(Existencias existencias) {
+        return existenciasRepository.save(existencias);
+    }
+    public List<Existencias> findAll() {
+        return existenciasRepository.findAll();
+    }
+    public Optional<Existencias> findById(int id) {
+        return existenciasRepository.findById(id);
+    }
+    public void deleteById(int id) {
+        existenciasRepository.deleteById(id);
     }
 }

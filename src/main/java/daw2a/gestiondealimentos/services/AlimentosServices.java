@@ -17,6 +17,18 @@ public class AlimentosServices {
 
     public Alimentos save(Alimentos alimentos) {
 
+import daw2a.gestiondealimentos.repository.AlimentoRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+@Service
+@RequiredArgsConstructor
+public class AlimentosServices {
+    private final AlimentoRepository alimentoRepository;
+
+    public Alimentos save(Alimentos alimentos) {
         return alimentoRepository.save(alimentos);
     }
 
