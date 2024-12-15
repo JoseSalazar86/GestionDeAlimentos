@@ -18,7 +18,7 @@ public class Existencias {
     @Column(nullable = false)
     private int cantidad;
 
-    @Column(nullable = false)
+    @Column(name = "fecha_entrada", nullable = false)
     private LocalDate fechaEntrada;
 
     @ManyToOne
