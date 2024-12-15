@@ -44,6 +44,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+
         <!-- DevTools -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -108,7 +109,6 @@
             <version>${jjwt.version}</version>
             <scope>runtime</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -119,5 +119,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
